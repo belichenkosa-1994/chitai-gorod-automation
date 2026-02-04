@@ -1,0 +1,2 @@
+Архитектура Python: ('64bit', 'WindowsPE')
+Разрядность Python: 64-бит
