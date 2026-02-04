@@ -1,5 +1,0 @@
-Python архитектура: 64-bit
-Ошибка при создании драйвера: [WinError 193] %1 не является приложением Win32
-Тип ошибки: OSError
-Пробуем альтернативный способ запуска Chrome...
-Альтернативный способ также не сработал: WebDriver.__init__() got multiple values for argument 'options'

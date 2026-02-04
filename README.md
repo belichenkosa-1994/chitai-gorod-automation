@@ -45,7 +45,7 @@ pip install -r requirements.txt
 cp .env.example .env
 # Отредактировать .env файл, указав необходимые данные
 
-## Запуск тестов
+## Запуск тестов, работа с ними
 
 # Запуск всех тестов
 pytest
@@ -62,6 +62,11 @@ allure serve allure-results
 .\allure-2.36.0\bin\allure.bat serve .\chitai-gorod-automation\allure-results
 # Запуск после добавления Allure в переменную PATH:
 allure serve
+# Запуск теста и очистка старого отчета:
+pytest tests/ --alluredir=allure-results --clean-alluredir
+# Очистка старых результатов в папке:
+cd "C:\GitHub-копия\skypro_automation\chitai-gorod-automation"
+Remove-Item -Path ".\allure-results\*" -Recurse -Force
 # Параллельный запуск тестов
 pytest -n 4
 
@@ -78,7 +83,7 @@ git add .
 # 2. Создайте коммит
 git commit -m "Дипломный проект: Автоматизация тестирования сайта Читай-Город"
 # 3. Отправьте в удаленный репозиторий
-git push origin diploma-project-clean
+git push origin diploma-project
 
 ## Реализованные тестовые сценарии
 
